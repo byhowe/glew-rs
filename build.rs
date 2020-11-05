@@ -42,5 +42,5 @@ fn main() {
     );
     println!("cargo:rustc-link-lib=static=GLEW");
 
-    println!("cargo:rustc-link-lib=static=X11");
+    println!("cargo:rustc-link-lib=X11");
 }
