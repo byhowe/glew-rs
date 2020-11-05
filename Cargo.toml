@@ -1,5 +1,5 @@
 [package]
-name = "glew-rs"
+name = "glew"
 version = "0.1.0"
 authors = ["B. Howe <37745048+byhowe@users.noreply.github.com>"]
 edition = "2018"
