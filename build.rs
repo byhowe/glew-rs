@@ -27,9 +27,12 @@ fn main() {
     let bindings = bindgen::builder()
         .header(dst.join("include/GL/glew.h").display().to_string())
         .generate_comments(false)
-        .whitelist_var("glew.*")
-        .whitelist_function("glew.*")
-        .whitelist_type("glew.*")
+        .whitelist_var("[gG][lL][eE][wW].*")
+        .whitelist_function("[gG][lL][eE][wW].*")
+        .whitelist_type("[gG][lL][eE][wW].*")
+        .whitelist_var("[gG][lL].*")
+        .whitelist_function("[gG][lL].*")
+        .whitelist_type("[gG][lL].*")
         .generate()
         .unwrap();
 
